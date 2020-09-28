@@ -16,7 +16,7 @@ function getResource(url) {
 
 function fillMovieWrapper() {
     var searchCriterion = document.getElementById("search_form").value;
-    getResource("http://www.omdbapi.com/?apikey=fe7364b5&r=json&plot=full&s=" + searchCriterion)
+    getResource("https://www.omdbapi.com/?apikey=fe7364b5&r=json&plot=full&s=" + searchCriterion)
         .then(function (responsePromise) {
             displayMovies(responsePromise)
         });
