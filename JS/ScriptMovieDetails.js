@@ -16,7 +16,7 @@ function fillMovieDetailsWrapper() {
     var url_array = url.split("=");
     var id = url_array[url_array.length - 1];
     console.log(id);
-    getResource("http://www.omdbapi.com/?apikey=fe7364b5&r=json&plot=full&i=" + id)
+    getResource("https://www.omdbapi.com/?apikey=fe7364b5&r=json&plot=full&i=" + id)
         .then(function (responsePromise) {
             displayMovieDetails(responsePromise)
         });
